@@ -4,11 +4,14 @@
 ```
 // set up folder ".dotfiles" 
 git init --bare $HOME/.dotfiles
+
 // set "dotfiles" as alias for git when working with dotfiles repository
 // where the git folder is in ".dotfiles" folder while the work tree is the home directory
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/.git/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 // write alias to zshrc
-echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/.git/ --work-tree=$HOME'" >> $HOME/.zshrc
+echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
+
 // disable showing untracked files in home directory
 dotfiles config --local status.showUntrackedFiles no
 
@@ -24,13 +27,17 @@ dotfiles push
 ```
 // add "dotfiles" to gitignore to avoid recursive tracking of git
 echo ".dotfiles" >> .gitignore
-// clone dotfiles repository to $HOME/.dotfiles
-git clone <repo> $HOME/.dotfiles
+
+// clone dotfiles bare repository to $HOME/.dotfiles
+git clone --bare <repo> $HOME/.dotfiles
+
 // set "dotfiles" as alias for git when working with dotfiles repository
 // where the git folder is in ".dotfiles" folder while the work tree is the home directory
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/.git/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 // write alias to zshrc
-echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/.git/ --work-tree=$HOME'" >> $HOME/.zshrc
+echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
+
 // checkout actual files in dotfiles to the home directory
 dotfiles checkout
 ```
