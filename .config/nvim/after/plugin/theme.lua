@@ -1,5 +1,5 @@
 vim.opt.termguicolors = true
-vim.cmd("colorscheme dayfox")
+vim.cmd("colorscheme nightfox")
 
 require"nightfox".setup({
   options = {
