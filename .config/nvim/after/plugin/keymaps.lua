@@ -7,8 +7,8 @@ local function set_keymap(mode, lhs, rhs, opts)
 end
 
 -- Telescope
-set_keymap("n", "<leader>f", "<cmd>Telescope find_files theme=dropdown<CR>")
-set_keymap("n", "<leader>F", "<cmd>Telescope live_grep theme=dropdown<CR>")
+set_keymap("n", "<leader>f", "<cmd>Telescope find_files<CR>")
+set_keymap("n", "<leader>F", "<cmd>Telescope live_grep<CR>")
 
 -- NvimTree
 set_keymap("n", "<leader>t", "<cmd>NvimTreeToggle<CR>")

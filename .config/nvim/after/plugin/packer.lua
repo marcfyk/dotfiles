@@ -70,5 +70,6 @@ require"packer".startup(function()
   -- Themes
   use { "ellisonleao/gruvbox.nvim" }
   use "EdenEast/nightfox.nvim"
+  use "folke/tokyonight.nvim"
 
 end)
