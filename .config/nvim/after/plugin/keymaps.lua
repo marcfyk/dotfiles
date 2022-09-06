@@ -7,8 +7,9 @@ local function set_keymap(mode, lhs, rhs, opts)
 end
 
 -- Telescope
-set_keymap("n", "<leader>f", "<cmd>Telescope find_files<CR>")
-set_keymap("n", "<leader>F", "<cmd>Telescope live_grep<CR>")
+set_keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
+set_keymap("n", "<leader>lg", "<cmd>Telescope live_grep<CR>")
+set_keymap("n", "<leader>fb", "<cmd>Telescope file_browser<CR>")
 
 -- NvimTree
 set_keymap("n", "<leader>t", "<cmd>NvimTreeToggle<CR>")
