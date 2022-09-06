@@ -10,6 +10,7 @@ require"nvim-treesitter.configs".setup{
         "java",
         "javascript",
         "lua",
+        "python",
         "proto",
         "regex",
         "rust",
