@@ -28,4 +28,4 @@ local function set_github_theme()
   vim.cmd("colorscheme github_dark_default")
 end
 
-set_github_theme()
+set_nightfox_theme()
