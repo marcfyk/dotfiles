@@ -59,6 +59,14 @@ require"packer".startup(function()
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
   use { "nvim-telescope/telescope-file-browser.nvim" }
 
+  -- Comments
+  use {
+    "numToStr/Comment.nvim",
+    config = function()
+      require"Comment".setup()
+    end
+  }
+
   -- Git
   use "tpope/vim-fugitive"
   use {
