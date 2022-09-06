@@ -1,7 +1,7 @@
 local function set_gruvbox_theme()
   vim.opt.termguicolors = true
   vim.o.background = "dark"
-  vim.cmd("colorscheme gruvbox")
+  vim.cmd"colorscheme gruvbox"
 end
 
 local function set_nightfox_theme()
@@ -15,12 +15,17 @@ local function set_nightfox_theme()
       }
     }
   })
-  vim.cmd("colorscheme nordfox")
+  vim.cmd"colorscheme nordfox"
 end
 
 local function set_tokyonight_theme()
   vim.opt.termguicolors = true
-  vim.cmd("colorscheme tokyonight")
+  vim.cmd"colorscheme tokyonight"
 end
 
-set_nightfox_theme()
+local function set_github_theme()
+  require"github-theme".setup()
+  vim.cmd("colorscheme github_dark_default")
+end
+
+set_github_theme()
