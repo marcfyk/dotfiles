@@ -29,5 +29,6 @@ vim.opt.termguicolors = true
 vim.opt.listchars = {
   eol = "↲",
   trail = "·",
+  leadmultispace = "»···"
 }
 vim.opt.list = true
