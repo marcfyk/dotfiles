@@ -1,6 +1,6 @@
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+vim.opt.expandtab = false
 vim.opt.smartindent = true
 
 vim.opt.cursorline = true
@@ -27,8 +27,12 @@ vim.opt.splitbelow = true
 vim.opt.termguicolors = true
 
 vim.opt.listchars = {
-  eol = "↲",
-  trail = "·",
-  leadmultispace = "»···"
+	eol = "↲",
+	tab = "» ",
+	trail = "·",
+	extends = "<",
+	precedes = ">",
+	conceal = "┊",
+	nbsp = "␣"
 }
 vim.opt.list = true
