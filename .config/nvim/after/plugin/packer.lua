@@ -12,22 +12,20 @@ require"packer".startup(function()
   use "neovim/nvim-lspconfig"
   use "williamboman/mason.nvim"
 
-
   -- Display LSP info more clearly
   use {
     "folke/trouble.nvim",
-    requires = "kyazdani42/nvim-web-devicons",
-    config = function()
-      require("trouble").setup{}
-    end
+    requires = "kyazdani42/nvim-web-devicons"
   }
 
-  -- Autocomplete
+  -- Completion Engine
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-buffer"
   use "hrsh7th/cmp-path"
   use "hrsh7th/cmp-cmdline"
+
+  -- Snippet Engine
   use "L3MON4D3/LuaSnip"
   use "saadparwaiz1/cmp_luasnip"
 
@@ -45,10 +43,7 @@ require"packer".startup(function()
     "kyazdani42/nvim-tree.lua",
     requires = {
       "kyazdani42/nvim-web-devicons",
-    },
-    config = function ()
-      require"nvim-tree".setup{}
-    end
+    }
   }
 
   -- Telescope
@@ -69,12 +64,7 @@ require"packer".startup(function()
 
   -- Git
   use "tpope/vim-fugitive"
-  use {
-    "lewis6991/gitsigns.nvim",
-    config = function()
-      require"gitsigns".setup{}
-    end
-  }
+  use "mhinz/vim-signify"
 
   -- Themes
   use "ellisonleao/gruvbox.nvim"
