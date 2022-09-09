@@ -62,6 +62,15 @@ require"packer".startup(function()
     end
   }
 
+  -- Terminal
+  use {
+    "akinsho/toggleterm.nvim",
+    tag = '*',
+    config = function()
+      require("toggleterm").setup()
+    end
+  }
+
   -- Surrounding characters
   use "tpope/vim-surround"
 
