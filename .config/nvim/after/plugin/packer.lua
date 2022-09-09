@@ -54,20 +54,14 @@ require"packer".startup(function()
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
   use { "nvim-telescope/telescope-file-browser.nvim" }
 
+  -- Terminal
+  use "numToStr/FTerm.nvim"
+
   -- Comments
   use {
     "numToStr/Comment.nvim",
     config = function()
       require"Comment".setup()
-    end
-  }
-
-  -- Terminal
-  use {
-    "akinsho/toggleterm.nvim",
-    tag = '*',
-    config = function()
-      require("toggleterm").setup()
     end
   }
 
