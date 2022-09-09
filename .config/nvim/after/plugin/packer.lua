@@ -62,6 +62,9 @@ require"packer".startup(function()
     end
   }
 
+  -- Surrounding characters
+  use "tpope/vim-surround"
+
   -- Git
   use "tpope/vim-fugitive"
   use "mhinz/vim-signify"
