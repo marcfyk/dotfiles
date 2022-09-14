@@ -8,4 +8,4 @@ vim.api.nvim_create_user_command("FTermToggle", fterm.toggle, { bang = true })
 local opts = {
   noremap = true
 }
-vim.keymap.set("n", "<leader>sh", fterm.open, opts)
+vim.keymap.set("n", "<leader>sh", fterm.toggle, opts)
