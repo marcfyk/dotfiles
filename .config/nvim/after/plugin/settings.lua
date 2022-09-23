@@ -27,3 +27,6 @@ vim.opt.splitbelow = true
 vim.opt.termguicolors = true
 
 vim.opt.mouse="a"
+
+vim.opt.list = true
+vim.opt.listchars:append"eol:↴"

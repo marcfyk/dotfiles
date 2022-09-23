@@ -65,6 +65,9 @@ require"packer".startup(function()
     end
   }
 
+  -- Indentation
+  use "lukas-reineke/indent-blankline.nvim"
+
   -- Surrounding characters
   use "tpope/vim-surround"
 
