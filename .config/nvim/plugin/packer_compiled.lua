@@ -115,6 +115,11 @@ _G.packer_plugins = {
     path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
+  },
   ["github-nvim-theme"] = {
     loaded = true,
     path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
@@ -214,11 +219,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/vim-signify",
     url = "https://github.com/mhinz/vim-signify"
-  },
-  ["vim-startify"] = {
-    loaded = true,
-    path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/vim-startify",
-    url = "https://github.com/mhinz/vim-startify"
   },
   ["vim-surround"] = {
     loaded = true,

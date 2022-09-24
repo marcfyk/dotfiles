@@ -2,13 +2,13 @@ local telescope = require"telescope"
 telescope.setup{
   pickers = {
     find_files = {
-      theme = "ivy"
+      theme = "dropdown"
     },
     live_grep = {
-      theme = "ivy"
+      theme = "dropdown"
     },
     file_browser = {
-      theme = "ivy"
+      theme = "dropdown"
     },
   },
 }
@@ -20,5 +20,5 @@ local opts = {
 }
 
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
-vim.keymap.set("n", "<leader><C-f>", "<cmd>Telescope live_grep<CR>", opts)
 vim.keymap.set("n", "<leader>fb", "<cmd>Telescope file_browser<CR>", opts)
+vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)

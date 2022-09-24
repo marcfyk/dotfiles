@@ -30,7 +30,7 @@ require"packer".startup(function()
   use "saadparwaiz1/cmp_luasnip"
 
   -- Startup Screen
-  use "mhinz/vim-startify"
+  use "glepnir/dashboard-nvim"
 
   -- Status Line
   use {
