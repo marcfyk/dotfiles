@@ -3,7 +3,7 @@ local dashboard = require"dashboard"
 dashboard.custom_center = {
   {
     icon = "➜ ",
-    desc = "File Grep            ",
+    desc = "File Grep             ",
     action = "Telescope live_grep",
     shortcut = "LEADER f g",
   },
@@ -21,7 +21,7 @@ dashboard.custom_center = {
   },
   {
     icon = "➜ ",
-    desc = "File Tree Director   ",
+    desc = "File Tree Director    ",
     action = "NvimTreeToggle",
     shortcut = "LEADER f t",
   }
