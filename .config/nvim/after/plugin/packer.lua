@@ -57,28 +57,28 @@ require"packer".startup(function()
   -- Terminal
   use "numToStr/FTerm.nvim"
 
-  -- Comments
-  use {
-    "numToStr/Comment.nvim",
-    config = function()
-      require"Comment".setup()
-    end
-  }
-
   -- Indentation
   use "lukas-reineke/indent-blankline.nvim"
-
-  -- Surrounding characters
-  use "tpope/vim-surround"
 
   -- Git
   use "tpope/vim-fugitive"
   use "mhinz/vim-signify"
+
+  -- Notifications
+  use "rcarriga/nvim-notify"
 
   -- Themes
   use "ellisonleao/gruvbox.nvim"
   use "EdenEast/nightfox.nvim"
   use "folke/tokyonight.nvim"
   use "projekt0n/github-nvim-theme"
+
+  -- key binds
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      require("which-key").setup{}
+    end
+  }
 
 end)
