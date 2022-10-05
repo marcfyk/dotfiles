@@ -1,0 +1,2 @@
+# avoids recursive tracking of git
+.dotfiles
