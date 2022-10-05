@@ -64,9 +64,6 @@ require"packer".startup(function()
   use "tpope/vim-fugitive"
   use "mhinz/vim-signify"
 
-  -- Notifications
-  use "rcarriga/nvim-notify"
-
   -- UI
   use({
     "folke/noice.nvim",
