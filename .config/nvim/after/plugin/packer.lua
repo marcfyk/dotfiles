@@ -67,6 +67,19 @@ require"packer".startup(function()
   -- Notifications
   use "rcarriga/nvim-notify"
 
+  -- UI
+  use({
+    "folke/noice.nvim",
+    event = "VimEnter",
+    config = function()
+      require("noice").setup()
+    end,
+    requires = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    }
+  })
+
   -- Themes
   use "ellisonleao/gruvbox.nvim"
   use "EdenEast/nightfox.nvim"
