@@ -1,2 +1,5 @@
 # avoids recursive tracking of git
 .dotfiles
+
+# compiled file from packer for neovim plugins
+.config/nvim/plugin/packer_compiled.lua
