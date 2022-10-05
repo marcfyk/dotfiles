@@ -1,43 +1,38 @@
 # Dotfiles
 
-## Setup
-```
-// set up folder ".dotfiles" 
-git init --bare $HOME/.dotfiles
-
-// set "dotfiles" as alias for git when working with dotfiles repository
-// where the git folder is in ".dotfiles" folder while the work tree is the home directory
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
-// write alias to zshrc
-echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
-
-// disable showing untracked files in home directory
-dotfiles config --local status.showUntrackedFiles no
-
-// set up git remote and add files as usual using "dotfiles" instead of git
-dotfiles remote add <name> <uri>
-dotfiles checkout <branch>
-dotfiles add <file>
-dotfiles commit
-dotfiles push
-```
-
 ## Installation
-```
-// add "dotfiles" to gitignore to avoid recursive tracking of git
-echo ".dotfiles" >> .gitignore
 
-// clone dotfiles bare repository to $HOME/.dotfiles
-git clone --bare <repo> $HOME/.dotfiles
+Clone dotfiles into `$HOME/.dotfiles` by running
+`git clone --bare <repo> $HOME/.dotfiles`
 
-// set "dotfiles" as alias for git when working with dotfiles repository
-// where the git folder is in ".dotfiles" folder while the work tree is the home directory
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+## Setting aliases
 
-// write alias to zshrc
-echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
+Ensure that `dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'`
+is set in `.zshrc`.
 
-// checkout actual files in dotfiles to the home directory
-dotfiles checkout
-```
+## Configure git
+
+Run `dotfiles config --local status.showUntrackedFiles no` to prevent showing
+untracked files in the $HOME directory when running `git status`.
+
+## Pulling updates from remote dotfiles
+
+Run `dotfiles checkout` or `dotfiles pull`
+
+## Initial Setup
+
+For a first time set up of dotfiles, run `git init --bare $HOME/.dotfiles` in
+your $HOME directory.
+
+
+Repeat the steps of setting up aliases and configuring git.
+
+
+Add remote by running `dotfiles remote add <name> <uri>`
+
+
+Checkout a branch (such as `master` or `main`)
+
+Add files and commit them as with a typical work tree tracked by git, but using
+`dotfiles` instead of `git`
+
