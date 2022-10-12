@@ -82,6 +82,7 @@ require"packer".startup(function()
   use "EdenEast/nightfox.nvim"
   use "folke/tokyonight.nvim"
   use "projekt0n/github-nvim-theme"
+  use "shaunsingh/solarized.nvim"
 
   -- key binds
   use {
