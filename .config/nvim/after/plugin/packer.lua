@@ -57,9 +57,6 @@ require"packer".startup(function()
   -- Terminal
   use "numToStr/FTerm.nvim"
 
-  -- Indentation
-  use "lukas-reineke/indent-blankline.nvim"
-
   -- Git
   use "tpope/vim-fugitive"
   use "mhinz/vim-signify"
@@ -77,13 +74,6 @@ require"packer".startup(function()
     }
   })
 
-  -- Themes
-  use "ellisonleao/gruvbox.nvim"
-  use "EdenEast/nightfox.nvim"
-  use "folke/tokyonight.nvim"
-  use "projekt0n/github-nvim-theme"
-  use "shaunsingh/solarized.nvim"
-
   -- key binds
   use {
     "folke/which-key.nvim",
@@ -91,5 +81,13 @@ require"packer".startup(function()
       require("which-key").setup{}
     end
   }
+
+  -- Themes
+  use "ellisonleao/gruvbox.nvim"
+  use "EdenEast/nightfox.nvim"
+  use "folke/tokyonight.nvim"
+  use "projekt0n/github-nvim-theme"
+  use "shaunsingh/solarized.nvim"
+  use "Tsuzat/NeoSolarized.nvim"
 
 end)
