@@ -92,8 +92,5 @@ require"packer".startup(function()
   use "EdenEast/nightfox.nvim"
   use "folke/tokyonight.nvim"
   use "projekt0n/github-nvim-theme"
-  use "shaunsingh/solarized.nvim"
-  use "Tsuzat/NeoSolarized.nvim"
-  use "shaunsingh/seoul256.nvim"
 
 end)
