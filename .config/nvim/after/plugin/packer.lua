@@ -66,19 +66,6 @@ require"packer".startup(function()
   end
 }
 
-  -- UI
-  use({
-    "folke/noice.nvim",
-    event = "VimEnter",
-    config = function()
-      require("noice").setup()
-    end,
-    requires = {
-      "MunifTanjim/nui.nvim",
-      "rcarriga/nvim-notify",
-    }
-  })
-
   -- key binds
   use {
     "folke/which-key.nvim",
