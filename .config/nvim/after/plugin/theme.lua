@@ -1,2 +1,3 @@
 vim.opt.termguicolors = true
-vim.cmd("colorscheme tokyonight-day")
+vim.opt.background = "dark"
+vim.cmd("colorscheme gruvbox")
