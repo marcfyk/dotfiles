@@ -79,4 +79,5 @@ require"packer".startup(function()
   use "EdenEast/nightfox.nvim"
   use "folke/tokyonight.nvim"
   use "projekt0n/github-nvim-theme"
+  use "junegunn/seoul256.vim.git"
 end)
