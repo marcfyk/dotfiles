@@ -1,3 +1,13 @@
 vim.opt.termguicolors = true
-vim.opt.background = "dark"
-vim.cmd("colorscheme tokyonight-night")
+
+require"nightfox".setup{
+  options = {
+    styles = {
+      comments = "italic",
+      keywords = "bold",
+      types = "italic,bold",
+    }
+  }
+}
+
+vim.cmd("colorscheme dawnfox")
