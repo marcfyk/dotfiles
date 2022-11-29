@@ -26,4 +26,5 @@ vim.opt.splitbelow = true
 
 vim.opt.list = true
 vim.opt.listchars:append"eol:↲"
-vim.opt.listchars:append"tab:>->"
+vim.opt.listchars:append"tab:<->"
+vim.opt.listchars:append"space:·"
