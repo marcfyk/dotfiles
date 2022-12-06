@@ -29,6 +29,16 @@ require"packer".startup(function()
   use "L3MON4D3/LuaSnip"
   use "saadparwaiz1/cmp_luasnip"
 
+  -- Debugger
+  use 'mfussenegger/nvim-dap'
+  use {
+    "rcarriga/nvim-dap-ui",
+    requires = {
+      "mfussenegger/nvim-dap"
+    }
+  }
+  use "leoluz/nvim-dap-go"
+
   -- Startup Screen
   use "glepnir/dashboard-nvim"
 
