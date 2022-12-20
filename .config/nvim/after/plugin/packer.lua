@@ -90,4 +90,5 @@ require"packer".startup(function()
   use "folke/tokyonight.nvim"
   use "projekt0n/github-nvim-theme"
   use "junegunn/seoul256.vim"
+  use "navarasu/onedark.nvim"
 end)
