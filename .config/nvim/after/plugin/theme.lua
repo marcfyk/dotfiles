@@ -1,3 +1,3 @@
 vim.opt.termguicolors = true
 
-vim.cmd("colorscheme tokyonight")
+require"onedark".load()
