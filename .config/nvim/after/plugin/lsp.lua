@@ -1,5 +1,5 @@
 -- Setup nvim-cmp.
-local cmp = require"cmp"
+local cmp = require "cmp"
 
 cmp.setup({
   snippet = {
@@ -65,7 +65,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
-local opts = { noremap=true, silent=true }
+local opts = { noremap = true, silent = true }
 vim.keymap.set("n", "<space>e", vim.diagnostic.open_float, opts)
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
@@ -79,7 +79,7 @@ local on_attach = function(client, bufnr)
 
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
-  local bufopts = { noremap=true, silent=true, buffer=bufnr }
+  local bufopts = { noremap = true, silent = true, buffer = bufnr }
   vim.keymap.set("n", "gD", vim.lsp.buf.declaration, bufopts)
   vim.keymap.set("n", "gd", vim.lsp.buf.definition, bufopts)
   vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
@@ -98,32 +98,32 @@ local on_attach = function(client, bufnr)
 end
 
 -- Setup lspconfig for languages.
-local lspconfig = require"lspconfig"
-lspconfig.gopls.setup{
+local lspconfig = require "lspconfig"
+lspconfig.gopls.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
-lspconfig.hls.setup{
+lspconfig.hls.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
-lspconfig.sumneko_lua.setup{
+lspconfig.sumneko_lua.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
-lspconfig.rust_analyzer.setup{
+lspconfig.rust_analyzer.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
-lspconfig.pyright.setup{
+lspconfig.pyright.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
-lspconfig.tsserver.setup{
+lspconfig.tsserver.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
-lspconfig.html.setup{
+lspconfig.html.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }

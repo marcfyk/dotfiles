@@ -1,3 +1,3 @@
 vim.opt.termguicolors = true
 
-vim.cmd("colorscheme tokyonight")
+vim.cmd("colorscheme 256_noir")

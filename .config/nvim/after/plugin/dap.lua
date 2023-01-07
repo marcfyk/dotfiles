@@ -1,11 +1,13 @@
-require"which-key".register({
+require "which-key".register({
   ["<F5>"] = { ":lua require'dap'.continue()<CR>", "DAP continue" },
   ["<F3>"] = { ":lua require'dap'.step_over()<CR>", "DAP step over" },
   ["<F2>"] = { ":lua require'dap'.step_into()<CR>", "DAP step into" },
   ["<F12>"] = { ":lua require'dap'.step_out()<CR>", "DAP step out" },
   ["<leader>b"] = { ":lua require'dap'.toggle_breakpoint()<CR>", "DAP toggle breakpoint" },
-  ["<leader>B"] = { ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", "DAP set breakpoint with breakpoint condition" },
-  ["<leader>lp"] = { ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>", "DAP set breakpoint with log point message" },
+  ["<leader>B"] = { ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>",
+    "DAP set breakpoint with breakpoint condition" },
+  ["<leader>lp"] = { ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>",
+    "DAP set breakpoint with log point message" },
   ["<leader>dr"] = { ":lua require'dap'.repl.open()<CR>", "DAP repl open" },
   ["<leader>dt"] = { ":lua require'dap-go'.debug_test()<CR>", "DAP debug test" },
 })
@@ -19,10 +21,10 @@ require"which-key".register({
 --vim.keymap.set("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>")
 --vim.keymap.set("n", "<leader>dt", ":lua require'dap-go'.debug_test()<CR>")
 
-local dap = require"dap"
-local dapui = require"dapui"
+local dap = require "dap"
+local dapui = require "dapui"
 
-require"dap-go".setup()
+require "dap-go".setup()
 
 dapui.setup()
 

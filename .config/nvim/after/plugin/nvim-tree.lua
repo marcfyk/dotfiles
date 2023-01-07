@@ -1,5 +1,5 @@
-require"nvim-tree".setup{}
+require "nvim-tree".setup {}
 
-require"which-key".register({
+require "which-key".register({
   ["<leader>ft"] = { "<cmd>NvimTreeToggle<CR>", "Toggle Tree Explorer" },
 })

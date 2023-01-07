@@ -1,4 +1,4 @@
-local dashboard = require"dashboard"
+local dashboard = require "dashboard"
 
 dashboard.custom_center = {
   {
@@ -15,7 +15,7 @@ dashboard.custom_center = {
   },
   {
     icon = "➜ ",
-    desc ="File Browser          ",
+    desc = "File Browser          ",
     action = "Telescope file_browser",
     shortcut = "LEADER f b",
   },
@@ -26,5 +26,3 @@ dashboard.custom_center = {
     shortcut = "LEADER f t",
   }
 }
-
-

@@ -1,5 +1,5 @@
-require"trouble".setup{}
+require "trouble".setup {}
 
-require"which-key".register({
+require "which-key".register({
   ["<leader>t"] = { "<cmd>TroubleToggle<CR>", "Toggle Errors" },
 })

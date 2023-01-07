@@ -1,4 +1,4 @@
-require"packer".startup(function()
+require "packer".startup(function()
   -- Package Manager
   use "wbthomason/packer.nvim"
 
@@ -59,7 +59,7 @@ require"packer".startup(function()
   -- Telescope
   use {
     "nvim-telescope/telescope.nvim",
-    requires = { {"nvim-lua/plenary.nvim"} }
+    requires = { { "nvim-lua/plenary.nvim" } }
   }
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
   use { "nvim-telescope/telescope-file-browser.nvim" }
@@ -70,24 +70,20 @@ require"packer".startup(function()
   -- Git
   use "tpope/vim-fugitive"
   use {
-  'lewis6991/gitsigns.nvim',
-  config = function()
-    require('gitsigns').setup()
-  end
-}
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      require('gitsigns').setup()
+    end
+  }
 
   -- key binds
   use {
     "folke/which-key.nvim",
     config = function()
-      require("which-key").setup{}
+      require("which-key").setup {}
     end
   }
 
   -- Themes
-  use "ellisonleao/gruvbox.nvim"
-  use "EdenEast/nightfox.nvim"
-  use "folke/tokyonight.nvim"
-  use "projekt0n/github-nvim-theme"
-  use "junegunn/seoul256.vim"
+  use "andreasvc/vim-256noir"
 end)
