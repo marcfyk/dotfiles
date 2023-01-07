@@ -85,5 +85,8 @@ require "packer".startup(function()
   }
 
   -- Themes
-  use "andreasvc/vim-256noir"
+  use {
+    "jesseleite/nvim-noirbuddy",
+    requires = { "tjdevries/colorbuddy.nvim", branch = "dev" }
+  }
 end)
