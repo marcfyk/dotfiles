@@ -97,33 +97,49 @@ local on_attach = function(client, bufnr)
   vim.keymap.set("n", "<space>f", vim.lsp.buf.formatting, bufopts)
 end
 
+local lsp_flags = {
+  debounce_text_changes = 150,
+}
+
 -- Setup lspconfig for languages.
 local lspconfig = require "lspconfig"
 lspconfig.gopls.setup {
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  flags = lsp_flags,
 }
 lspconfig.hls.setup {
+  filetypes = {
+    "haskell",
+    "lhaskell",
+    "cabal",
+  },
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  flags = lsp_flags,
 }
 lspconfig.sumneko_lua.setup {
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  flags = lsp_flags,
 }
 lspconfig.rust_analyzer.setup {
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  flags = lsp_flags,
 }
 lspconfig.pyright.setup {
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  flags = lsp_flags,
 }
 lspconfig.tsserver.setup {
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  flags = lsp_flags,
 }
 lspconfig.html.setup {
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  flags = lsp_flags,
 }
