@@ -85,6 +85,7 @@ require "packer".startup(function()
   }
 
   -- Themes
+  use "EdenEast/nightfox.nvim"
   use {
     "jesseleite/nvim-noirbuddy",
     requires = { "tjdevries/colorbuddy.nvim", branch = "dev" }
