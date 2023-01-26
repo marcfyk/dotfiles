@@ -24,8 +24,6 @@ require "which-key".register({
 local dap = require "dap"
 local dapui = require "dapui"
 
-require "dap-go".setup()
-
 dapui.setup()
 
 dap.listeners.after.event_initialized["dapui_config"] = function()

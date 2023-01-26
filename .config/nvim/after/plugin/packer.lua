@@ -37,10 +37,6 @@ require "packer".startup(function()
       "mfussenegger/nvim-dap"
     }
   }
-  use "leoluz/nvim-dap-go"
-
-  -- Startup Screen
-  use "glepnir/dashboard-nvim"
 
   -- Status Line
   use {
@@ -50,10 +46,10 @@ require "packer".startup(function()
 
   -- Tree Explorer
   use {
-    "kyazdani42/nvim-tree.lua",
+    'nvim-tree/nvim-tree.lua',
     requires = {
-      "kyazdani42/nvim-web-devicons",
-    }
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
   }
 
   -- Telescope
@@ -63,9 +59,6 @@ require "packer".startup(function()
   }
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
   use { "nvim-telescope/telescope-file-browser.nvim" }
-
-  -- Terminal
-  use "numToStr/FTerm.nvim"
 
   -- Git
   use "tpope/vim-fugitive"
@@ -86,8 +79,5 @@ require "packer".startup(function()
 
   -- Themes
   use "EdenEast/nightfox.nvim"
-  use {
-    "jesseleite/nvim-noirbuddy",
-    requires = { "tjdevries/colorbuddy.nvim", branch = "dev" }
-  }
+  use "sainnhe/everforest"
 end)

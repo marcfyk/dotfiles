@@ -1,12 +1,5 @@
-vim.opt.termguicolors = true
+vim.g.everforest_diagnostic_text_highlight = 1
+vim.g.everforest_diagnostic_line_highlight = 1
+vim.g.everforest_diagnostic_virtual_text = "colored"
 
-require"nightfox".setup{
-  options = {
-    styles = {
-      keywords = "bold",
-      types = "bold",
-    }
-  }
-}
-
-vim.cmd("colorscheme carbonfox")
+vim.cmd("colorscheme everforest")
