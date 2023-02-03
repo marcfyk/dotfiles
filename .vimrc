@@ -21,6 +21,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'altercation/vim-colors-solarized'
 Plug 'junegunn/seoul256.vim'
+Plug 'sainnhe/everforest'
 
 call plug#end()
 
@@ -44,10 +45,10 @@ set number
 set incsearch
 
 set termguicolors
-colorscheme seoul256
-set background=light
+colorscheme everforest
+set background=dark
 
-let g:airline_theme='papercolor'
+let g:airline_theme='everforest'
 let g:airline_powerline_fonts=1
 
 let g:netrw_liststyle=3
