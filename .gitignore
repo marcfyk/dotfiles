@@ -5,4 +5,4 @@
 .config/nvim/plugin/packer_compiled.lua
 
 # ignore .zwc files
-*.zwc
+**/*.zwc
