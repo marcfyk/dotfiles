@@ -3,3 +3,6 @@
 
 # compiled file from packer for neovim plugins
 .config/nvim/plugin/packer_compiled.lua
+
+# ignore .zwc files
+**/*.zwc
