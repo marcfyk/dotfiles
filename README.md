@@ -1,38 +1,31 @@
 # Dotfiles
 
-## Installation
+### Installation
 
-Clone dotfiles into `$HOME/.dotfiles` by running
-`git clone --bare <repo> $HOME/.dotfiles`
+Clone dotfiles into `$HOME/.dotfiles` by running:
 
-## Setting aliases
+```shell
+git clone --bare <repo> $HOME/.dotfiles
+```
 
-Ensure that `dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'`
-is set in `.zshrc`.
+### Setting aliases
 
-## Configure git
+Ensure that the following alias is set in `.zshrc`:
 
-Run `dotfiles config --local status.showUntrackedFiles no` to prevent showing
-untracked files in the $HOME directory when running `git status`.
+```shell
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+```
 
-## Pulling updates from remote dotfiles
+### Configure git
 
-Run `dotfiles checkout` or `dotfiles pull`
+Run the following command to prevent showing untracked files in the $HOME directory when running `dotfiles status`:
 
-## Initial Setup
+```shell
+dotfiles config --local status.showUntrackedFiles no
+```
 
-For a first time set up of dotfiles, run `git init --bare $HOME/.dotfiles` in
-your $HOME directory.
+This command can also be added to your `.zshrc` file after setting your `dotfiles` alias.
 
+### Git commands
 
-Repeat the steps of setting up aliases and configuring git.
-
-
-Add remote by running `dotfiles remote add <name> <uri>`
-
-
-Checkout a branch (such as `master` or `main`)
-
-Add files and commit them as with a typical work tree tracked by git, but using
-`dotfiles` instead of `git`
-
+Whenever you want to run a git command on the dotfiles repository, simply replace `git <command>` with `dotfiles <command>`.
