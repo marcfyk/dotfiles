@@ -51,8 +51,6 @@ require "packer".startup(function()
     requires = { "kyazdani42/nvim-web-devicons", opt = true }
   }
 
-
-
   -- Tree Explorer
   use {
     'nvim-tree/nvim-tree.lua',
@@ -87,6 +85,7 @@ require "packer".startup(function()
   }
 
   -- Themes
+  use "folke/tokyonight.nvim"
   use "EdenEast/nightfox.nvim"
   use "sainnhe/everforest"
 end)
