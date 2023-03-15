@@ -75,6 +75,9 @@ require "packer".startup(function()
       require('gitsigns').setup()
     end
   }
+  use { 'akinsho/git-conflict.nvim', tag = "*", config = function()
+    require('git-conflict').setup()
+  end }
 
   -- key binds
   use {
