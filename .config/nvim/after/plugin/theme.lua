@@ -22,4 +22,4 @@ local function tokyonight()
   vim.cmd("colorscheme tokyonight")
 end
 
-everforest()
+tokyonight()
