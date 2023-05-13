@@ -79,7 +79,10 @@ require "packer".startup(function()
     require('git-conflict').setup()
   end }
 
-  -- key binds
+  -- Tree view for symbols
+  use 'simrat39/symbols-outline.nvim'
+
+  -- Key binds
   use {
     "folke/which-key.nvim",
     config = function()
