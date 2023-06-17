@@ -179,4 +179,9 @@ return {
       { "<leader>so", "<cmd>SymbolsOutline<CR>", desc = "Toggle Symbols Outline" }
     }
   },
+
+  {
+    "HampusHauffman/block.nvim",
+    config = true,
+  },
 }
