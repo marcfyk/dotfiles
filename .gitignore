@@ -4,5 +4,8 @@
 # compiled file from packer for neovim plugins
 .config/nvim/plugin/packer_compiled.lua
 
+# lock file from lazy.nvim
+.config/nvim/lazy-lock.json
+
 # ignore .zwc files
 **/*.zwc
