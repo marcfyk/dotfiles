@@ -19,7 +19,7 @@ local function nightfox()
 end
 
 local function tokyonight()
-  vim.cmd("colorscheme tokyonight")
+  vim.cmd("colorscheme tokyonight-night")
 end
 
 tokyonight()
