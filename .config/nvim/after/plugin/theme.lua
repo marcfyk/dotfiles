@@ -22,4 +22,21 @@ local function tokyonight()
   vim.cmd("colorscheme tokyonight-night")
 end
 
-everforest()
+local function github()
+  require("github-theme").setup({
+    options = {
+      styles = {
+        comments = "italic",
+        keywords = "bold",
+        types = "italic,bold",
+      }
+    }
+  })
+  vim.cmd("colorscheme github_dark_high_contrast")
+end
+
+local function moonfly()
+  vim.cmd("colorscheme moonfly")
+end
+
+github()

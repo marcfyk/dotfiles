@@ -3,6 +3,8 @@ return {
   "folke/tokyonight.nvim",
   "EdenEast/nightfox.nvim",
   "sainnhe/everforest",
+  "projekt0n/github-nvim-theme",
+  "bluz71/vim-moonfly-colors",
 
   -- Key binds
   {
