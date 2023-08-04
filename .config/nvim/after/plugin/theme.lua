@@ -39,4 +39,4 @@ local function moonfly()
   vim.cmd("colorscheme moonfly")
 end
 
-tokyonight()
+everforest()

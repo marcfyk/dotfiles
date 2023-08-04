@@ -186,4 +186,6 @@ return {
     "HampusHauffman/block.nvim",
     config = true,
   },
+
+  "edkolev/tmuxline.vim",
 }
