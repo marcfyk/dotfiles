@@ -2,6 +2,9 @@ call plug#begin()
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
+
+Plug 'edkolev/tmuxline.vim'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -33,24 +36,44 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set laststatus=2
+set smartindent
 
-set colorcolumn=80
+set cursorline
+
+set noerrorbells
+
+set noswapfile
+set nobackup
+set hidden
 
 set splitright
 set splitbelow
 
+set relativenumber
 set number
 
+set scrolloff=8
+
 set incsearch
+set nohlsearch
+
+set clipboard=unnamedplus
 
 set termguicolors
 colorscheme everforest
 set background=dark
 
-let g:airline_theme='everforest'
-let g:airline_powerline_fonts=1
+let g:lightline = {'colorscheme': 'everforest' }
 
 let g:netrw_liststyle=3
 let g:netrw_banner=0
 
+let g:tmuxline_preset = {
+      \'a'    : '#S',
+      \'b'    : '#W',
+      \'c'    : ['%a', '%h-%d', '%H:%M'],
+      \'win'  : ['#I', '#W'],
+      \'cwin' : ['#I', '#W', '#F'],
+      \'x'    : '',
+      \'y'    : ['RAM: [#{ram_icon}] #{ram_percentage}', 'CPU: [#{cpu_icon}] #{cpu_percentage}', 'Online: #{online_status}'],
+      \'z'    : '#H'}
