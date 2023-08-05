@@ -60,9 +60,6 @@ cmp.setup.cmdline(":", {
   })
 })
 
--- Setup lspconfig.
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap = true, silent = true }
@@ -70,6 +67,9 @@ vim.keymap.set("n", "<space>e", vim.diagnostic.open_float, opts)
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
 vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist, opts)
+
+-- Setup lspconfig.
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -101,50 +101,39 @@ local lsp_flags = {
   debounce_text_changes = 150,
 }
 
--- Setup lspconfig for languages.
-local lspconfig = require "lspconfig"
-lspconfig.gopls.setup {
+local default_setup = {
   on_attach = on_attach,
   capabilities = capabilities,
   flags = lsp_flags,
 }
-lspconfig.hls.setup {
+
+local function setup_lsp(conf)
+  local setup_config = {}
+  for k, v in pairs(default_setup) do
+    setup_config[k] = v
+  end
+  if conf ~= nil then
+    for k, v in pairs(conf) do
+      setup_config[k] = v
+    end
+  end
+  return setup_config
+end
+
+-- Setup lspconfig for languages.
+local lspconfig = require "lspconfig"
+lspconfig.gopls.setup(default_setup)
+lspconfig.hls.setup(setup_lsp {
   filetypes = {
     "haskell",
     "lhaskell",
     "cabal",
   },
-  on_attach = on_attach,
-  capabilities = capabilities,
-  flags = lsp_flags,
-}
-lspconfig.lua_ls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  flags = lsp_flags,
-}
-lspconfig.rust_analyzer.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  flags = lsp_flags,
-}
-lspconfig.pyright.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  flags = lsp_flags,
-}
-lspconfig.tsserver.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  flags = lsp_flags,
-}
-lspconfig.html.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  flags = lsp_flags,
-}
-lspconfig.marksman.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  flags = lsp_flags,
-}
+})
+lspconfig.ocamllsp.setup(default_setup)
+lspconfig.lua_ls.setup(default_setup)
+lspconfig.rust_analyzer.setup(default_setup)
+lspconfig.pyright.setup(default_setup)
+lspconfig.tsserver.setup(default_setup)
+lspconfig.html.setup(default_setup)
+lspconfig.marksman.setup(default_setup)

@@ -33,6 +33,7 @@ return {
           "java",
           "javascript",
           "lua",
+          "ocaml",
           "python",
           "proto",
           "regex",
