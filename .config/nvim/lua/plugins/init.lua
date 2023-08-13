@@ -140,7 +140,7 @@ return {
     },
     config = true,
     keys = {
-      { "<leader>ft", "<cmd>NvimTreeToggle<CR>", desc = "Toggle Tree Explorer", }
+      { "<leader><tab>", "<cmd>NvimTreeToggle<CR>", desc = "Toggle Tree Explorer", }
     },
   },
 

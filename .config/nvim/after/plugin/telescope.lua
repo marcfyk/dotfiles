@@ -5,7 +5,8 @@ telescope.load_extension "file_browser"
 
 require "which-key".register({
   ["<leader>ff"] = { "<cmd> Telescope find_files<CR>", "Find File" },
-  ["<leader>fh"] = { "<cmd> Telescope find_files hidden=true<CR>", "Find File" },
-  ["<leader>fb"] = { "<cmd> Telescope file_browser<CR>", "File Browser" },
+  ["<leader>ffh"] = { "<cmd> Telescope find_files hidden=true<CR>", "Find File" },
   ["<leader>fg"] = { "<cmd> Telescope live_grep<CR>", "Live Grep" },
+  ["<leader>fh"] = { "<cmd> Telescope help_tags<CR>", "Help tags" },
+  ["<leader>fb"] = { "<cmd> Telescope file_browser<CR>", "File Browser" },
 })
