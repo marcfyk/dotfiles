@@ -58,7 +58,7 @@ return {
   "neovim/nvim-lspconfig",
   {
     "williamboman/mason.nvim",
-    config = {
+    opts = {
       ui = {
         icons = {
           package_installed = "✓",
@@ -102,7 +102,7 @@ return {
     "akinsho/bufferline.nvim",
     version = "*",
     dependencies = "nvim-tree/nvim-web-devicons",
-    config = {
+    opts = {
       options = {
         diagnostics = "nvim_lsp",
         diagnostics_indicator = function(count, level, diagnostics_dict, context)
@@ -125,7 +125,7 @@ return {
       "nvim-tree/nvim-web-devicons",
       lazy = true,
     },
-    config = {
+    opts = {
       options = {
         theme = "auto"
       }
