@@ -16,6 +16,49 @@ return {
     end,
   },
 
+  -- Dashboard
+  {
+    "glepnir/dashboard-nvim",
+    event = "VimEnter",
+    config = function()
+      require("dashboard").setup {
+        theme = "hyper",
+        config = {
+          week_header = {
+            enable = true,
+          },
+          shortcut = {
+            {
+              desc = "Checkhealth",
+              group = "DiagnosticHint",
+              action = "checkhealth",
+              key = "c",
+            },
+            {
+              desc = "Update",
+              group = "@property",
+              action = "Lazy update",
+              key = "u"
+            },
+            {
+              desc = "Files",
+              group = "Label",
+              action = "Telescope find_files",
+              key = "f",
+            },
+            {
+              desc = "Grep",
+              group = "Label",
+              action = "Telescope live_grep",
+              key = "g",
+            },
+          }
+        },
+      }
+    end,
+    dependencies = { { "nvim-tree/nvim-web-devicons" } }
+  },
+
   -- Treesitter
   {
     "nvim-treesitter/nvim-treesitter",
