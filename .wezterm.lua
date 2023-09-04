@@ -7,6 +7,6 @@ if wezterm.config_builder then
 end
 
 config.color_scheme = "Everforest Dark (Gogh)"
-config.font = wezterm.font "Iosevka Term Nerd Font Complete Mono"
+config.font = wezterm.font "Iosevka Term"
 
 return config
