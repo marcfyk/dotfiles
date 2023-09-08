@@ -1,6 +1,7 @@
 return {
   -- Themes
   "sainnhe/everforest",
+  "projekt0n/github-nvim-theme",
 
   -- Key binds
   {
