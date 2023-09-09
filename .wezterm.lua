@@ -7,6 +7,6 @@ if wezterm.config_builder then
 end
 
 config.color_scheme = "Github Dark"
-config.font = wezterm.font "Iosevka Nerd Font"
+config.font = wezterm.font "Blex Mono"
 
 return config
