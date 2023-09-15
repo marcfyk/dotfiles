@@ -2,6 +2,7 @@ return {
   -- Themes
   "sainnhe/everforest",
   "projekt0n/github-nvim-theme",
+  "rebelot/kanagawa.nvim",
 
   -- Key binds
   {

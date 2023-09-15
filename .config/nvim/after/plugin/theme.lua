@@ -18,4 +18,15 @@ local function github()
   vim.cmd("colorscheme github_dark")
 end
 
-github()
+local function kanagawa()
+  require("kanagawa").setup({
+    theme = "wave",
+    background = {
+      dark = "wave",
+      light = "lotus",
+    }
+  })
+  vim.cmd("colorscheme kanagawa")
+end
+
+kanagawa()
