@@ -15,7 +15,7 @@ local function github()
       }
     }
   })
-  vim.cmd("colorscheme github_dark")
+  vim.cmd("colorscheme github_dark_high_contrast")
 end
 
 local function kanagawa()
@@ -29,4 +29,4 @@ local function kanagawa()
   vim.cmd("colorscheme kanagawa")
 end
 
-kanagawa()
+github()
