@@ -29,4 +29,4 @@ local function kanagawa()
   vim.cmd("colorscheme kanagawa")
 end
 
-github()
+kanagawa()
