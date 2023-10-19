@@ -29,4 +29,8 @@ local function kanagawa()
   vim.cmd("colorscheme kanagawa")
 end
 
-kanagawa()
+local function catppuccin()
+  vim.cmd("colorscheme catppuccin-latte")
+end
+
+catppuccin()

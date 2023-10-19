@@ -3,6 +3,7 @@ return {
   "sainnhe/everforest",
   "projekt0n/github-nvim-theme",
   "rebelot/kanagawa.nvim",
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
   -- Key binds
   {
