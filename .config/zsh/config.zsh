@@ -24,10 +24,3 @@ antigen bundle zsh-users/zsh-completions
 antigen theme spaceship-prompt/spaceship-prompt
 
 antigen apply
-
-
-##### Neofetch #####
-
-[[ -f $(which neofetch) ]] && neofetch
-
-##########
