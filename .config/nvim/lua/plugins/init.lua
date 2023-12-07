@@ -3,7 +3,9 @@ return {
   "sainnhe/everforest",
   "projekt0n/github-nvim-theme",
   "rebelot/kanagawa.nvim",
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { "catppuccin/nvim",           name = "catppuccin", priority = 1000 },
+  { "kepano/flexoki-neovim",     name = "flexoki" },
+  { "NLKNguyen/papercolor-theme" },
 
   -- Key binds
   {

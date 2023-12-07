@@ -34,4 +34,12 @@ local function catppuccin()
   vim.cmd("colorscheme catppuccin-mocha")
 end
 
-catppuccin()
+local function flexoki()
+  vim.cmd("colorscheme flexoki-dark")
+end
+
+local function papercolor()
+  vim.cmd("colorscheme PaperColor")
+end
+
+papercolor()
