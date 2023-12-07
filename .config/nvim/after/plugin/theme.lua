@@ -42,4 +42,4 @@ local function papercolor()
   vim.cmd("colorscheme PaperColor")
 end
 
-papercolor()
+catppuccin()
