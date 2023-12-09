@@ -7,6 +7,6 @@ if wezterm.config_builder then
 end
 
 config.color_scheme = "Catppuccin Mocha"
-config.font = wezterm.font "VictorMono Nerd Font"
+config.font = wezterm.font "BlexMono Nerd Font"
 
 return config
