@@ -46,4 +46,4 @@ local function moonfly()
   vim.cmd("colorscheme moonfly")
 end
 
-moonfly()
+flexoki()
