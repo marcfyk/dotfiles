@@ -42,4 +42,8 @@ local function papercolor()
   vim.cmd("colorscheme PaperColor")
 end
 
-catppuccin()
+local function moonfly()
+  vim.cmd("colorscheme moonfly")
+end
+
+moonfly()
