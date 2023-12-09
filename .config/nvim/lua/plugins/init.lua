@@ -3,9 +3,10 @@ return {
   "sainnhe/everforest",
   "projekt0n/github-nvim-theme",
   "rebelot/kanagawa.nvim",
+  "NLKNguyen/papercolor-theme",
   { "catppuccin/nvim",           name = "catppuccin", priority = 1000 },
   { "kepano/flexoki-neovim",     name = "flexoki" },
-  { "NLKNguyen/papercolor-theme" },
+  { "bluz71/vim-moonfly-colors", name = "moonfly",    lazy = false,   priority = 1000 },
 
   -- Key binds
   {
@@ -86,7 +87,13 @@ return {
   "hrsh7th/cmp-cmdline",
 
   -- Snippet Engine
-  "L3MON4D3/LuaSnip",
+  {
+    "L3MON4D3/LuaSnip",
+    -- follow latest release.
+    version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+    -- install jsregexp (optional!).
+    build = "make install_jsregexp"
+  },
   "saadparwaiz1/cmp_luasnip",
 
   -- Debugger
