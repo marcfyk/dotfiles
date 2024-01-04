@@ -31,7 +31,7 @@ local function kanagawa()
 end
 
 local function catppuccin()
-  vim.cmd("colorscheme catppuccin-mocha")
+  vim.cmd("colorscheme catppuccin-latte")
 end
 
 local function flexoki()
@@ -46,4 +46,4 @@ local function moonfly()
   vim.cmd("colorscheme moonfly")
 end
 
-flexoki()
+catppuccin()
