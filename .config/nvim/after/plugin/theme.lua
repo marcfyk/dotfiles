@@ -46,4 +46,8 @@ local function moonfly()
   vim.cmd("colorscheme moonfly")
 end
 
-catppuccin()
+local function rosepine()
+  vim.cmd("colorscheme rose-pine-main")
+end
+
+rosepine()
