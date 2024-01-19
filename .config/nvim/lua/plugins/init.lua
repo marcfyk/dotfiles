@@ -197,8 +197,6 @@ return {
     config = true,
   },
 
-  "edkolev/tmuxline.vim",
-
   -- Dashboard
   {
     "glepnir/dashboard-nvim",
