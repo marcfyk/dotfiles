@@ -126,7 +126,21 @@ end
 
 -- Setup lspconfig for languages.
 local lspconfig = require "lspconfig"
-lspconfig.gopls.setup(default_setup)
+lspconfig.gopls.setup(setup_lsp {
+  settings = {
+    gopls = {
+      env = {
+        GOPACKAGESDRIVER = "./tools/gopackagesdriver.sh"
+      },
+      directoryFilters = {
+        "-bazel-bin",
+        "-bazel-out",
+        "-bazel-testlogs",
+        "-bazel-mypkg",
+      }
+    }
+  }
+})
 lspconfig.hls.setup(setup_lsp {
   filetypes = {
     "haskell",
