@@ -1,12 +1,5 @@
 return {
   -- Themes
-  "sainnhe/everforest",
-  "projekt0n/github-nvim-theme",
-  "rebelot/kanagawa.nvim",
-  "NLKNguyen/papercolor-theme",
-  { "catppuccin/nvim",           name = "catppuccin", priority = 1000 },
-  { "kepano/flexoki-neovim",     name = "flexoki" },
-  { "bluz71/vim-moonfly-colors", name = "moonfly",    lazy = false,   priority = 1000 },
   { 'rose-pine/neovim',          name = 'rose-pine' },
 
   -- Key binds
