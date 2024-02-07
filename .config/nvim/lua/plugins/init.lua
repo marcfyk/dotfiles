@@ -1,6 +1,6 @@
 return {
   -- Themes
-  { 'rose-pine/neovim',          name = 'rose-pine' },
+  { 'rose-pine/neovim', name = 'rose-pine' },
 
   -- Key binds
   {
@@ -49,6 +49,7 @@ return {
       }
     end
   },
+  "nvim-treesitter/nvim-treesitter-context",
 
   -- LSP
   "neovim/nvim-lspconfig",
@@ -173,20 +174,6 @@ return {
   {
     "akinsho/git-conflict.nvim",
     version = "*",
-    config = true,
-  },
-
-  -- Tree view for symbols
-  {
-    "simrat39/symbols-outline.nvim",
-    config = true,
-    keys = {
-      { "<leader>so", "<cmd>SymbolsOutline<CR>", desc = "Toggle Symbols Outline" }
-    }
-  },
-
-  {
-    "HampusHauffman/block.nvim",
     config = true,
   },
 
