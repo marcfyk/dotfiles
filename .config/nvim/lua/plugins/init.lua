@@ -17,36 +17,14 @@ return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
     config = function()
-      require("nvim-treesitter.configs").setup {
-        ensure_installed = {
-          "c",
-          "cpp",
-          "eex",
-          "elixir",
-          "go",
-          "haskell",
-          "heex",
-          "java",
-          "javascript",
-          "lua",
-          "ocaml",
-          "python",
-          "proto",
-          "regex",
-          "rust",
-          "scala",
-          "vim",
-        },
+      local configs = require("nvim-treesitter.configs")
+
+      configs.setup({
+        ensure_installed = {},
         sync_install = false,
-        auto_install = true,
-        highlight = {
-          enable = true,
-          additional_vim_regex_highlighting = false,
-        },
-        incremental_selection = {
-          enable = true,
-        },
-      }
+        highlight = { enable = true },
+        indent = { enable = true },
+      })
     end
   },
   "nvim-treesitter/nvim-treesitter-context",
