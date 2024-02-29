@@ -16,13 +16,7 @@ Plug 'fatih/vim-go'
 
 Plug 'ionide/Ionide-vim'
 
-Plug 'ayu-theme/ayu-vim'
-Plug 'morhetz/gruvbox'
-Plug 'arcticicestudio/nord-vim'
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'altercation/vim-colors-solarized'
-Plug 'junegunn/seoul256.vim'
-Plug 'sainnhe/everforest'
+Plug 'rose-pine/vim'
 
 call plug#end()
 
@@ -58,10 +52,10 @@ set nohlsearch
 set clipboard=unnamedplus
 
 set termguicolors
-colorscheme everforest
 set background=dark
+colorscheme rosepine
 
-let g:lightline = {'colorscheme': 'everforest' }
+let g:lightline = { 'colorscheme': 'rosepine' }
 
 let g:netrw_liststyle=3
 let g:netrw_banner=0
