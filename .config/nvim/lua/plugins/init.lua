@@ -1,6 +1,12 @@
 return {
   -- Themes
-  { 'rose-pine/neovim', name = 'rose-pine' },
+  {
+    'rose-pine/neovim',
+    name = 'rose-pine',
+    config = function()
+      vim.cmd("colorscheme rose-pine-main")
+    end
+  },
 
   -- Key binds
   {
@@ -27,7 +33,17 @@ return {
       })
     end
   },
-  "nvim-treesitter/nvim-treesitter-context",
+  {
+    "nvim-treesitter/nvim-treesitter-context",
+    config = function()
+      local whichkey = require "which-key"
+      whichkey.register({
+        ["<leader>ce"] = { "<cmd>TSContextEnable<CR>", "TSContextEnable" },
+        ["<leader>cd"] = { "<cmd>TSContextDisable<CR>", "TSContextDisable" },
+        ["<leader>ct"] = { "<cmd>TSContextToggle<CR>", "TSContextToggle" },
+      })
+    end
+  },
 
   -- LSP
   "neovim/nvim-lspconfig",
@@ -68,15 +84,6 @@ return {
     build = "make install_jsregexp"
   },
   "saadparwaiz1/cmp_luasnip",
-
-  -- Debugger
-  "mfussenegger/nvim-dap",
-  {
-    "rcarriga/nvim-dap-ui",
-    dependencies = {
-      "mfussenegger/nvim-dap"
-    }
-  },
 
   -- Buffer Line
   {
@@ -119,7 +126,17 @@ return {
     dependencies = {
       'nvim-tree/nvim-web-devicons', -- optional, for file icons
     },
-    config = true,
+    config = function()
+      vim.g.loaded_netrw = 1
+      vim.g.loaded_netrwPlugin = 1
+      local nvimtree = require "nvim-tree"
+      nvimtree.setup {
+        filters = {
+          git_ignored = false,
+          dotfiles = false,
+        }
+      }
+    end,
     keys = {
       { "<leader><tab>", "<cmd>NvimTreeToggle<CR>", desc = "Toggle Tree Explorer", }
     },
@@ -134,7 +151,7 @@ return {
   -- Telescope
   {
     "nvim-telescope/telescope.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" }
+    dependencies = { "nvim-lua/plenary.nvim" },
   },
   {
     "nvim-telescope/telescope-fzf-native.nvim",
