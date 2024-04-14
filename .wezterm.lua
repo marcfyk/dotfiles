@@ -7,6 +7,6 @@ if wezterm.config_builder then
 end
 
 config.color_scheme = "rose-pine"
-config.font = wezterm.font "JetBrainsMono Nerd Font"
+config.font = wezterm.font "IosevkaTermSlab Nerd Font"
 
 return config
