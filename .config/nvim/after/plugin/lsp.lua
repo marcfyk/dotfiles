@@ -151,5 +151,5 @@ lspconfig.thriftls.setup(default_setup)
 lspconfig.kotlin_language_server.setup(default_setup)
 lspconfig.sourcekit.setup(default_setup)
 lspconfig.zls.setup(setup_lsp {
-  single_fiue_support = true,
+  single_file_support = true,
 })
