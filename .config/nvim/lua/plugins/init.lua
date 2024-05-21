@@ -24,12 +24,13 @@ return {
     build = ":TSUpdate",
     config = function()
       local configs = require("nvim-treesitter.configs")
-
       configs.setup({
+        auto_install = true,
         ensure_installed = {},
-        sync_install = false,
         highlight = { enable = true },
+        ignore_install = {},
         indent = { enable = true },
+        sync_install = false,
       })
     end
   },
