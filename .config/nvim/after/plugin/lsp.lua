@@ -151,3 +151,4 @@ lspconfig.thriftls.setup(default_setup)
 lspconfig.zls.setup(setup_lsp {
   single_file_support = true,
 })
+lspconfig.cmake.setup{}
