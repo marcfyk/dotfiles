@@ -1,7 +1,5 @@
 call plug#begin()
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'itchyny/lightline.vim'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -9,12 +7,6 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
-
-Plug 'elixir-editors/vim-elixir'
-
-Plug 'fatih/vim-go'
-
-Plug 'ionide/Ionide-vim'
 
 Plug 'rose-pine/vim'
 
