@@ -86,27 +86,6 @@ return {
   },
   "saadparwaiz1/cmp_luasnip",
 
-  -- Buffer Line
-  {
-    "akinsho/bufferline.nvim",
-    version = "*",
-    dependencies = "nvim-tree/nvim-web-devicons",
-    opts = {
-      options = {
-        diagnostics = "nvim_lsp",
-        diagnostics_indicator = function(count, level, diagnostics_dict, context)
-          local s = " "
-          for e, n in pairs(diagnostics_dict) do
-            local sym = e == "error" and " "
-                or (e == "warning" and " " or "")
-            s = s .. n .. sym
-          end
-          return s
-        end,
-      },
-    },
-  },
-
   -- Status Line
   {
     "nvim-lualine/lualine.nvim",
@@ -211,49 +190,6 @@ return {
     "akinsho/git-conflict.nvim",
     version = "*",
     config = true,
-  },
-
-  -- Dashboard
-  {
-    "nvimdev/dashboard-nvim",
-    event = "VimEnter",
-    config = function()
-      require("dashboard").setup {
-        theme = "hyper",
-        config = {
-          week_header = {
-            enable = true,
-          },
-          shortcut = {
-            {
-              desc = "Checkhealth",
-              group = "DiagnosticHint",
-              action = "checkhealth",
-              key = "c",
-            },
-            {
-              desc = "Update",
-              group = "@property",
-              action = "Lazy update",
-              key = "u"
-            },
-            {
-              desc = "Files",
-              group = "Label",
-              action = "Telescope find_files",
-              key = "f",
-            },
-            {
-              desc = "Grep",
-              group = "Label",
-              action = "Telescope live_grep",
-              key = "g",
-            },
-          }
-        },
-      }
-    end,
-    dependencies = { { "nvim-tree/nvim-web-devicons" } }
   },
 
   -- neovim API
