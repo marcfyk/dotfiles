@@ -1,10 +1,13 @@
 return {
   -- Themes
   {
-    'rose-pine/neovim',
-    name = 'rose-pine',
+    "rose-pine/neovim",
+    name = "rose-pine",
+  },
+  {
+    "EdenEast/nightfox.nvim",
     config = function()
-      vim.cmd("colorscheme rose-pine-main")
+      vim.cmd("colorscheme carbonfox")
     end
   },
 
