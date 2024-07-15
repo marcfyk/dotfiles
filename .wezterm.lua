@@ -6,7 +6,7 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
-config.color_scheme = "carbonfox"
-config.font = wezterm.font "ZedMono Nerd Font"
+config.color_scheme = "dayfox"
+config.font = wezterm.font "CaskaydiaCove Nerd Font"
 
 return config
