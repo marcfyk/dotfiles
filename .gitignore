@@ -9,3 +9,6 @@
 
 # ignore .zwc files
 **/*.zwc
+
+# ignore tmux plugins directory
+.tmux/plugins/
