@@ -8,5 +8,6 @@ end
 
 config.color_scheme = "dayfox"
 config.font = wezterm.font "CaskaydiaCove Nerd Font"
+config.font_size = 16
 
 return config
