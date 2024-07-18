@@ -40,11 +40,10 @@ return {
   {
     "nvim-treesitter/nvim-treesitter-context",
     config = function()
-      local whichkey = require "which-key"
-      whichkey.register({
-        ["<leader>ce"] = { "<cmd>TSContextEnable<CR>", "TSContextEnable" },
-        ["<leader>cd"] = { "<cmd>TSContextDisable<CR>", "TSContextDisable" },
-        ["<leader>ct"] = { "<cmd>TSContextToggle<CR>", "TSContextToggle" },
+      require "which-key".add({
+        { "<leader>ce", "<cmd>TSContextEnable<CR>",  desc = "TSContextEnable" },
+        { "<leader>cd", "<cmd>TSContextDisable<CR>", desc = "TSContextDisable" },
+        { "<leader>ct", "<cmd>TSContextToggle<CR>",  desc = "TSContextToggle" },
       })
     end
   },
@@ -162,13 +161,13 @@ return {
       }
       telescope.load_extension "fzf"
       telescope.load_extension "file_browser"
-      require "which-key".register({
-        ["<leader>ff"] = { "<cmd>Telescope find_files<CR>", "Find File" },
-        ["<leader>fd"] = { "<cmd>Telescope find_files hidden=true<CR>", "Find File" },
-        ["<leader>fg"] = { "<cmd>Telescope live_grep<CR>", "Live Grep" },
-        ["<leader>ft"] = { "<cmd>Telescope diagnostics<CR>", "Diagnostics" },
-        ["<leader>fh"] = { "<cmd>Telescope help_tags<CR>", "Help tags" },
-        ["<leader>fb"] = { "<cmd>Telescope file_browser<CR>", "File Browser" },
+      require "which-key".add({
+        { "<leader>ff", "<cmd>Telescope find_files<CR>",             desc = "Find File" },
+        { "<leader>fd", "<cmd>Telescope find_files hidden=true<CR>", desc = "Find File" },
+        { "<leader>fg", "<cmd>Telescope live_grep<CR>",              desc = "Live Grep" },
+        { "<leader>ft", "<cmd>Telescope diagnostics<CR>",            desc = "Diagnostics" },
+        { "<leader>fh", "<cmd>Telescope help_tags<CR>",              desc = "Help tags" },
+        { "<leader>fb", "<cmd>Telescope file_browser<CR>",           desc = "File Browser" },
       })
     end
   },
