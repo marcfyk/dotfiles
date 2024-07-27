@@ -16,7 +16,7 @@ vim.opt.hidden = true
 vim.opt.relativenumber = true
 vim.opt.number = true
 
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 999
 
 vim.opt.incsearch = true
 vim.opt.hlsearch = false

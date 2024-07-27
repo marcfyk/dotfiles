@@ -36,7 +36,7 @@ set splitbelow
 set relativenumber
 set number
 
-set scrolloff=8
+set scrolloff=999
 
 set incsearch
 set nohlsearch
