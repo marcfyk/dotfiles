@@ -7,7 +7,17 @@ return {
   {
     "EdenEast/nightfox.nvim",
     config = function()
-      vim.cmd("colorscheme dayfox")
+    end
+  },
+  {
+    "sainnhe/everforest",
+    config = function()
+      vim.g.everforest_background = "hard"
+      vim.g.everforest_ui_contrast = "high"
+      vim.g.everforest_diagnostic_text_highlight = "1"
+      vim.g.everforest_diagnostic_line_highlight = "1"
+      vim.g.everforest_diagnostic_virtual_text = "highlighted"
+      vim.cmd("colorscheme everforest")
     end
   },
 
