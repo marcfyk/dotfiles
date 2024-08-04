@@ -3,18 +3,30 @@ return {
   {
     "rose-pine/neovim",
     name = "rose-pine",
+    config = function()
+      require("rose-pine").setup({
+        variant = "main",
+        dark_variant = "main",
+        styles = {
+          transparency = true,
+        }
+      })
+      vim.cmd("colorscheme rose-pine")
+    end
   },
   {
     "EdenEast/nightfox.nvim",
     config = function()
-      vim.cmd("colorscheme nordfox")
+      require("nightfox").setup({
+        options = {
+          transparent = true,
+        },
+      })
     end
   },
   {
     "sainnhe/everforest",
     config = function()
-      vim.g.everforest_background = "hard"
-      vim.g.everforest_ui_contrast = "high"
       vim.g.everforest_diagnostic_text_highlight = "1"
       vim.g.everforest_diagnostic_line_highlight = "1"
       vim.g.everforest_diagnostic_virtual_text = "highlighted"
