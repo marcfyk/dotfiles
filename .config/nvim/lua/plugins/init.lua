@@ -11,7 +11,6 @@ return {
           transparency = true,
         }
       })
-      vim.cmd("colorscheme rose-pine")
     end
   },
   {
@@ -22,6 +21,7 @@ return {
           transparent = true,
         },
       })
+      vim.cmd("colorscheme carbonfox")
     end
   },
   {
