@@ -21,7 +21,7 @@ return {
           transparent = true,
         },
       })
-      vim.cmd("colorscheme carbonfox")
+      vim.cmd("colorscheme nordfox")
     end
   },
   {
@@ -30,6 +30,7 @@ return {
       vim.g.everforest_diagnostic_text_highlight = "1"
       vim.g.everforest_diagnostic_line_highlight = "1"
       vim.g.everforest_diagnostic_virtual_text = "highlighted"
+      vim.g.everforest_transparent_background = 2
     end
   },
 
