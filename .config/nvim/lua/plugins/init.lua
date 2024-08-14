@@ -21,7 +21,7 @@ return {
           transparent = true,
         },
       })
-      vim.cmd("colorscheme nordfox")
+      vim.cmd("colorscheme carbonfox")
     end
   },
   {
