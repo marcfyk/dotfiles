@@ -262,6 +262,14 @@ return {
     config = true,
   },
 
+  -- REST
+  {
+    'mistweaverco/kulala.nvim',
+    config = function()
+      require('kulala').setup()
+    end
+  },
+
   -- neovim API
   { "folke/neodev.nvim", opts = {} }
 }
