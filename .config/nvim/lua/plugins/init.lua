@@ -21,7 +21,6 @@ return {
           transparent = true,
         },
       })
-      vim.cmd("colorscheme carbonfox")
     end
   },
   {
@@ -31,6 +30,21 @@ return {
       vim.g.everforest_diagnostic_line_highlight = "1"
       vim.g.everforest_diagnostic_virtual_text = "highlighted"
       vim.g.everforest_transparent_background = 2
+    end
+  },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      require("catppuccin").setup({
+        background = {
+          light = "latte",
+          dark = "mocha",
+        },
+        transparent_background = true,
+      })
+      vim.cmd("colorscheme catppuccin")
     end
   },
 
