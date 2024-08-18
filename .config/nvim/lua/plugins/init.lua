@@ -170,6 +170,8 @@ return {
     }
   },
 
+  { "mbbill/undotree" },
+
   -- Tree Explorer
   {
     'nvim-tree/nvim-tree.lua',
