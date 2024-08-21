@@ -21,6 +21,7 @@ return {
           transparent = true,
         },
       })
+      vim.cmd("colorscheme carbonfox")
     end
   },
   {
@@ -44,7 +45,6 @@ return {
         },
         transparent_background = true,
       })
-      vim.cmd("colorscheme catppuccin")
     end
   },
 
