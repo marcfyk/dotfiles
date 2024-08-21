@@ -287,5 +287,15 @@ return {
   },
 
   -- neovim API
-  { "folke/neodev.nvim", opts = {} }
+  { "folke/neodev.nvim", opts = {} },
+
+  -- bookmarks
+  {
+    "otavioschwanck/arrow.nvim",
+    opts = {
+      show_icons = true,
+      leader_key = ";",        -- Recommended to be a single key
+      buffer_leader_key = "m", -- Per Buffer Mappings
+    },
+  },
 }
