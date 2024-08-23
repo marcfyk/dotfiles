@@ -21,7 +21,6 @@ return {
           transparent = true,
         },
       })
-      vim.cmd("colorscheme carbonfox")
     end
   },
   {
@@ -41,10 +40,11 @@ return {
       require("catppuccin").setup({
         background = {
           light = "latte",
-          dark = "mocha",
+          dark = "macchiato",
         },
         transparent_background = true,
       })
+      vim.cmd("colorscheme catppuccin")
     end
   },
 

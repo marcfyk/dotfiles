@@ -6,7 +6,7 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
-config.color_scheme = "carbonfox"
+config.color_scheme = "catppuccin-macchiato"
 config.font = wezterm.font "ZedMono Nerd Font"
 config.font_size = 16
 config.window_background_opacity = 0.8
