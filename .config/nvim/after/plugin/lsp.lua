@@ -141,7 +141,6 @@ lspconfig.hls.setup(setup_lsp {
 lspconfig.ocamllsp.setup(default_setup)
 lspconfig.lua_ls.setup(default_setup)
 lspconfig.rust_analyzer.setup(default_setup)
-lspconfig.pyright.setup(default_setup)
 lspconfig.basedpyright.setup(default_setup)
 lspconfig.tsserver.setup(default_setup)
 lspconfig.html.setup(default_setup)
@@ -152,4 +151,5 @@ lspconfig.thriftls.setup(default_setup)
 lspconfig.zls.setup(setup_lsp {
   single_file_support = true,
 })
-lspconfig.cmake.setup {}
+lspconfig.cmake.setup { default_setup }
+lspconfig.jqls.setup { default_setup }
