@@ -105,7 +105,7 @@ return {
     dependencies = "rktjmp/lush.nvim",
     config = function ()
       vim.opt.background = "dark"
-      vim.cmd("colorscheme zenbones")
+      vim.cmd("colorscheme zenwritten")
     end
   },
 
