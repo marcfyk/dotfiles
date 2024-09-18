@@ -104,7 +104,7 @@ return {
     -- In Vim, compat mode is turned on as Lush only works in Neovim.
     dependencies = "rktjmp/lush.nvim",
     config = function ()
-      vim.opt.background = "dark"
+      vim.opt.background = "light"
       vim.cmd("colorscheme zenwritten")
     end
   },
