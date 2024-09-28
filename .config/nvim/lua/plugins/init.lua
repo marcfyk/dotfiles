@@ -95,7 +95,6 @@ return {
           }
         end,
       })
-      vim.cmd("colorscheme kanagawa")
     end
   },
   {
@@ -104,7 +103,13 @@ return {
     -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
     -- In Vim, compat mode is turned on as Lush only works in Neovim.
     dependencies = "rktjmp/lush.nvim",
+    config = function()
+    end
+  },
+  {
+    "folke/tokyonight.nvim",
     config = function ()
+      vim.cmd("colorscheme tokyonight-day")
     end
   },
 
