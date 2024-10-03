@@ -95,6 +95,7 @@ return {
           }
         end,
       })
+      vim.cmd("colorscheme kanagawa")
     end
   },
   {
@@ -109,7 +110,6 @@ return {
   {
     "folke/tokyonight.nvim",
     config = function ()
-      vim.cmd("colorscheme tokyonight-day")
     end
   },
 
