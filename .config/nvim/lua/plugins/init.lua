@@ -109,7 +109,7 @@ return {
   },
   {
     "folke/tokyonight.nvim",
-    config = function ()
+    config = function()
     end
   },
 
@@ -362,5 +362,14 @@ return {
       leader_key = ";",        -- Recommended to be a single key
       buffer_leader_key = "m", -- Per Buffer Mappings
     },
+  },
+
+  -- markdown
+  {
+    'MeanderingProgrammer/render-markdown.nvim',
+    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
+    ---@module 'render-markdown'
+    ---@type render.md.UserConfig
+    opts = {},
   },
 }
