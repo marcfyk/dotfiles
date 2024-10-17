@@ -9,6 +9,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 
 Plug 'rose-pine/vim'
+Plug 'sainnhe/everforest'
 
 call plug#end()
 
@@ -45,9 +46,13 @@ set clipboard=unnamedplus
 
 set termguicolors
 set background=dark
-colorscheme rosepine
+let g:everforest_diagnostic_text_highlight = "1"
+let g:everforest_diagnostic_line_highlight = "1"
+let g:everforest_transparent_background = 0
+let g:everforest_background = "hard"
+colorscheme everforest
 
-let g:lightline = { 'colorscheme': 'rosepine' }
+let g:lightline = { 'colorscheme': 'everforest' }
 
 let g:netrw_liststyle=3
 let g:netrw_banner=0
