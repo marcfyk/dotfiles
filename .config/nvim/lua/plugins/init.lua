@@ -30,7 +30,7 @@ return {
       vim.g.everforest_diagnostic_line_highlight = "1"
       vim.g.everforest_diagnostic_virtual_text = "highlighted"
       vim.g.everforest_transparent_background = 0
-      vim.g.everforest_background = "hard"
+      vim.g.everforest_background = "medium"
       vim.cmd("colorscheme everforest")
     end
   },
