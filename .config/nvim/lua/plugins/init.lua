@@ -8,7 +8,7 @@ return {
         variant = "main",
         dark_variant = "main",
         styles = {
-          transparency = true,
+          transparency = false,
         }
       })
     end
@@ -18,7 +18,7 @@ return {
     config = function()
       require("nightfox").setup({
         options = {
-          transparent = true,
+          transparent = false,
         },
       })
     end
@@ -31,7 +31,6 @@ return {
       vim.g.everforest_diagnostic_virtual_text = "highlighted"
       vim.g.everforest_transparent_background = 0
       vim.g.everforest_background = "medium"
-      vim.cmd("colorscheme everforest")
     end
   },
   {
@@ -53,7 +52,7 @@ return {
       require("kanagawa").setup({
         transparent = false,
         background = {
-          dark = "dragon",
+          dark = "wave",
           light = "lotus",
         },
         colors = {
@@ -97,6 +96,7 @@ return {
           }
         end,
       })
+      vim.cmd("colorscheme kanagawa")
     end
   },
   {
