@@ -394,4 +394,9 @@ return {
     ---@type render.md.UserConfig
     opts = {},
   },
+
+  -- database
+  { "tpope/vim-dadbod" },
+  { "kristijanhusak/vim-dadbod-completion" },
+  { "kristijanhusak/vim-dadbod-ui" },
 }
