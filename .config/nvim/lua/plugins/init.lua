@@ -96,6 +96,7 @@ return {
           }
         end,
       })
+      vim.opt.background = "light"
       vim.cmd("colorscheme kanagawa")
     end
   },
@@ -287,21 +288,21 @@ return {
       telescope.setup {
         pickers = {
           find_files = {
-            theme = "ivy",
+            theme = "dropdown"
           },
           live_grep = {
-            theme = "ivy",
+            theme = "dropdown",
           },
           diagnostics = {
-            theme = "ivy",
+            theme = "dropdown",
           },
           help_tags = {
-            theme = "ivy",
+            theme = "dropdown",
           },
         },
         extensions = {
           file_browser = {
-            theme = "ivy",
+            theme = "dropdown",
           }
         }
       }
