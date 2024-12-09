@@ -26,3 +26,7 @@ brights = [
     "#5E857A",
     "#43436C",
 ]
+
+[metadata]
+aliases = ["Kanagawa Lotus"]
+name = "Kanagawa Lotus"
