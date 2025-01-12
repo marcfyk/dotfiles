@@ -52,7 +52,7 @@ return {
       require("kanagawa").setup({
         transparent = false,
         background = {
-          dark = "wave",
+          dark = "dragon",
           light = "lotus",
         },
         colors = {
@@ -108,7 +108,7 @@ return {
           }
         end,
       })
-      vim.opt.background = "light"
+      vim.opt.background = "dark"
       vim.cmd("colorscheme kanagawa")
     end
   },
