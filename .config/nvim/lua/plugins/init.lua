@@ -44,6 +44,8 @@ return {
         },
         transparent_background = false,
       })
+      vim.opt.background = "light"
+      vim.cmd("colorscheme catppuccin")
     end
   },
   {
@@ -108,8 +110,6 @@ return {
           }
         end,
       })
-      vim.opt.background = "dark"
-      vim.cmd("colorscheme kanagawa")
     end
   },
   {
