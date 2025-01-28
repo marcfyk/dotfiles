@@ -44,8 +44,6 @@ return {
         },
         transparent_background = false,
       })
-      vim.opt.background = "light"
-      vim.cmd("colorscheme catppuccin")
     end
   },
   {
@@ -124,6 +122,8 @@ return {
   {
     "folke/tokyonight.nvim",
     config = function()
+      vim.opt.background = "light"
+      vim.cmd("colorscheme tokyonight")
     end
   },
 
