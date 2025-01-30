@@ -150,5 +150,6 @@ lspconfig.thriftls.setup(default_setup)
 lspconfig.zls.setup(setup_lsp {
   single_file_support = true,
 })
-lspconfig.cmake.setup { default_setup }
-lspconfig.jqls.setup { default_setup }
+lspconfig.cmake.setup(default_setup)
+lspconfig.jqls.setup(default_setup)
+lspconfig.jinja_lsp.setup(default_setup)
