@@ -153,3 +153,5 @@ lspconfig.zls.setup(setup_lsp {
 lspconfig.cmake.setup(default_setup)
 lspconfig.jqls.setup(default_setup)
 lspconfig.jinja_lsp.setup(default_setup)
+lspconfig.gradle_ls.setup(default_setup)
+lspconfig.jdtls.setup(default_setup)
