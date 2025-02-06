@@ -114,7 +114,7 @@ local default_setup = {
   flags = lsp_flags,
 }
 
-local function setup_lsp(conf)
+local function custom_setup(conf)
   local setup_config = {}
   for k, v in pairs(default_setup) do
     setup_config[k] = v
@@ -130,7 +130,7 @@ end
 -- Setup lspconfig for languages.
 local lspconfig = require "lspconfig"
 lspconfig.gopls.setup(default_setup)
-lspconfig.hls.setup(setup_lsp {
+lspconfig.hls.setup(custom_setup {
   filetypes = {
     "haskell",
     "lhaskell",
@@ -147,7 +147,7 @@ lspconfig.marksman.setup(default_setup)
 lspconfig.clangd.setup(default_setup)
 lspconfig.taplo.setup(default_setup)
 lspconfig.thriftls.setup(default_setup)
-lspconfig.zls.setup(setup_lsp {
+lspconfig.zls.setup(custom_setup {
   single_file_support = true,
 })
 lspconfig.cmake.setup(default_setup)
