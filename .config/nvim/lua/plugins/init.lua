@@ -245,6 +245,10 @@ return {
   },
   "saadparwaiz1/cmp_luasnip",
 
+  -- java
+  "mfussenegger/nvim-jdtls",
+
+
   -- Status Line
   {
     "nvim-lualine/lualine.nvim",
