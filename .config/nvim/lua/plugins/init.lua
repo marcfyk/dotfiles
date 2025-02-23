@@ -122,8 +122,7 @@ return {
   {
     "folke/tokyonight.nvim",
     config = function()
-      vim.opt.background = "light"
-      vim.cmd("colorscheme tokyonight")
+      vim.cmd("colorscheme tokyonight-night")
     end
   },
 
