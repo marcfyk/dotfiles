@@ -122,7 +122,7 @@ return {
   {
     "folke/tokyonight.nvim",
     config = function()
-      vim.cmd("colorscheme tokyonight-day")
+      vim.cmd("colorscheme tokyonight-night")
     end
   },
 
