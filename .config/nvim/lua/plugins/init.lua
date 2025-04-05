@@ -35,7 +35,7 @@ return {
   },
   {
     "sainnhe/gruvbox-material",
-    config = function() 
+    config = function()
       vim.g.gruvbox_material_background = "hard"
       vim.g.gruvbox_material_foreground = "original"
       vim.g.gruvbox_material_enable_bold = 1
@@ -46,7 +46,16 @@ return {
       vim.g.gruvbox_material_inlay_hints_background = "dimmed"
       vim.g.gruvbox_material_statusline_style = "original"
       vim.opt.background = "dark"
-      vim.cmd("colorscheme gruvbox-material")
+    end
+  },
+  {
+    "ellisonleao/gruvbox.nvim",
+    config = function()
+      require("gruvbox").setup({
+        contrast = "hard"
+      })
+      vim.opt.background = "dark"
+      vim.cmd("colorscheme gruvbox")
     end
   },
   {
