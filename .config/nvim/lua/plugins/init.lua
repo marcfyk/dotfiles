@@ -141,7 +141,7 @@ return {
     -- In Vim, compat mode is turned on as Lush only works in Neovim.
     dependencies = "rktjmp/lush.nvim",
     config = function()
-      vim.cmd("colorscheme zenwritten")
+      vim.cmd("colorscheme zenbones")
     end
   },
   {
