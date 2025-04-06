@@ -141,12 +141,21 @@ return {
     -- In Vim, compat mode is turned on as Lush only works in Neovim.
     dependencies = "rktjmp/lush.nvim",
     config = function()
-      vim.cmd("colorscheme zenbones")
     end
   },
   {
     "folke/tokyonight.nvim",
     config = function()
+    end
+  },
+  {
+    "scottmckendry/cyberdream.nvim",
+    config = function()
+      require("cyberdream").setup({
+        italic_comments = true,
+        borderless_pickers = true,
+      })
+      vim.cmd("colorscheme cyberdream")
     end
   },
 
