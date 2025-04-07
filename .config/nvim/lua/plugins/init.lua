@@ -365,27 +365,6 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       local telescope = require "telescope"
-      telescope.setup {
-        pickers = {
-          find_files = {
-            theme = "dropdown"
-          },
-          live_grep = {
-            theme = "dropdown",
-          },
-          diagnostics = {
-            theme = "dropdown",
-          },
-          help_tags = {
-            theme = "dropdown",
-          },
-        },
-        extensions = {
-          file_browser = {
-            theme = "dropdown",
-          }
-        }
-      }
       telescope.load_extension "fzf"
       telescope.load_extension "file_browser"
       require "which-key".add({
