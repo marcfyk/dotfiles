@@ -132,6 +132,7 @@ return {
           }
         end,
       })
+      vim.cmd("colorscheme kanagawa")
     end
   },
   {
@@ -178,7 +179,6 @@ return {
           }
         end,
       })
-      vim.cmd("colorscheme tokyonight")
     end
   },
   {
