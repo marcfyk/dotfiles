@@ -26,11 +26,13 @@ return {
   {
     "sainnhe/everforest",
     config = function()
-      vim.g.everforest_diagnostic_text_highlight = "1"
-      vim.g.everforest_diagnostic_line_highlight = "1"
-      vim.g.everforest_diagnostic_virtual_text = "highlighted"
-      vim.g.everforest_transparent_background = 0
       vim.g.everforest_background = "medium"
+      vim.g.everforest_enable_italic = true
+      vim.g.everforest_transparent_background = 0
+      vim.g.everforest_ui_contrast = "high"
+      vim.g.everforest_diagnostic_text_highlight = 1
+      vim.g.everforest_diagnostic_line_highlight = 1
+      vim.g.everforest_diagnostic_virtual_text = "highlighted"
     end
   },
   {
