@@ -241,16 +241,18 @@ return {
   -- LSP
   "neovim/nvim-lspconfig",
   {
-    "williamboman/mason.nvim",
-    opts = {
-      ui = {
-        icons = {
-          package_installed = "✓",
-          package_pending = "➜",
-          package_uninstalled = "✗"
+    "mason-org/mason.nvim",
+    config = function()
+      require("mason").setup({
+        ui = {
+          icons = {
+            package_installed = "✓",
+            package_pending = "➜",
+            package_uninstalled = "✗"
+          }
         }
-      }
-    },
+      })
+    end
   },
   {
     "folke/trouble.nvim",
