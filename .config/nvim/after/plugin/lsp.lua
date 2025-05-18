@@ -60,8 +60,6 @@ cmp.setup.cmdline(":", {
 })
 
 -- Setup lspconfig.
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded", })
 vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" })
 
@@ -105,53 +103,26 @@ vim.api.nvim_create_autocmd('LspAttach', {
   end,
 })
 
-local lsp_flags = {
-  debounce_text_changes = 150,
-}
-
-local default_setup = {
-  capabilities = capabilities,
-  flags = lsp_flags,
-}
-
-local function custom_setup(conf)
-  local setup_config = {}
-  for k, v in pairs(default_setup) do
-    setup_config[k] = v
-  end
-  if conf ~= nil then
-    for k, v in pairs(conf) do
-      setup_config[k] = v
-    end
-  end
-  return setup_config
-end
-
 -- Setup lspconfig for languages.
-local lspconfig = require "lspconfig"
-lspconfig.gopls.setup(default_setup)
-lspconfig.hls.setup(custom_setup {
-  filetypes = {
-    "haskell",
-    "lhaskell",
-    "cabal",
-  },
-})
-lspconfig.ocamllsp.setup(default_setup)
-lspconfig.lua_ls.setup(default_setup)
-lspconfig.rust_analyzer.setup(default_setup)
-lspconfig.basedpyright.setup(default_setup)
-lspconfig.ts_ls.setup(default_setup)
-lspconfig.html.setup(default_setup)
-lspconfig.marksman.setup(default_setup)
-lspconfig.clangd.setup(default_setup)
-lspconfig.taplo.setup(default_setup)
-lspconfig.thriftls.setup(default_setup)
-lspconfig.zls.setup(custom_setup {
-  single_file_support = true,
-})
-lspconfig.cmake.setup(default_setup)
-lspconfig.jqls.setup(default_setup)
-lspconfig.jinja_lsp.setup(default_setup)
-lspconfig.gradle_ls.setup(default_setup)
-lspconfig.jdtls.setup(default_setup)
+local lsps = {
+  "gopls",
+  "hls",
+  "ocamllsp",
+  "lua_ls",
+  "rust_analyzer",
+  "basedpyright",
+  "ts_ls",
+  "marksman",
+  "clangd",
+  "taplo",
+  "thriftls",
+  "zls",
+  "cmake",
+  "jqls",
+  "jinja_lsp",
+  "gradle_ls",
+  "jdtls",
+}
+for _, lsp in ipairs(lsps) do
+  vim.lsp.enable(lsp)
+end
