@@ -122,6 +122,7 @@ local lsps = {
   "jinja_lsp",
   "gradle_ls",
   "jdtls",
+  "jsonls",
 }
 for _, lsp in ipairs(lsps) do
   vim.lsp.enable(lsp)
