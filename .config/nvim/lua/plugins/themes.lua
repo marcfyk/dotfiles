@@ -213,12 +213,12 @@ local cyberdream = {
 return {
   -- rosepine,
   -- nightfox,
-  -- everforest,
+  everforest,
   -- gruvbox_material,
   -- gruvbox,
   -- catppuccin,
   -- kanagawa,
   -- zenbones,
-  tokyonight,
+  -- tokyonight,
   -- cyberdream,
 }
