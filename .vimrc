@@ -45,11 +45,14 @@ set nohlsearch
 set clipboard=unnamedplus
 
 set termguicolors
-set background=dark
-let g:everforest_diagnostic_text_highlight = "1"
-let g:everforest_diagnostic_line_highlight = "1"
-let g:everforest_transparent_background = 0
-let g:everforest_background = "hard"
+set background=light
+let g:everforest_background="medium"
+let g:everforest_enable_italic="true"
+let g:everforest_transparent_background=0
+let g:everforest_ui_contrast="high"
+let g:everforest_diagnostic_text_highlight=1
+let g:everforest_diagnostic_line_highlight=1
+let g:everforest_diagnostic_virtual_text="highlighted"
 colorscheme everforest
 
 let g:lightline = { 'colorscheme': 'everforest' }
