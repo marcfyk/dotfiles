@@ -112,6 +112,7 @@ local lsps = {
   "rust_analyzer",
   "basedpyright",
   "ts_ls",
+  "denols",
   "marksman",
   "clangd",
   "taplo",
