@@ -35,7 +35,7 @@ local everforest = {
     vim.g.everforest_diagnostic_text_highlight = 1
     vim.g.everforest_diagnostic_line_highlight = 1
     vim.g.everforest_diagnostic_virtual_text = "highlighted"
-    vim.opt.background = "dark"
+    vim.opt.background = "light"
     vim.cmd("colorscheme everforest")
   end
 }
