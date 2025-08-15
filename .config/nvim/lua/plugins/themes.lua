@@ -21,7 +21,7 @@ local nightfox = {
         transparent = false,
       },
     })
-    vim.cmd("colorscheme dayfox")
+    vim.cmd("colorscheme carbonfox")
   end
 }
 
@@ -35,7 +35,7 @@ local everforest = {
     vim.g.everforest_diagnostic_text_highlight = 1
     vim.g.everforest_diagnostic_line_highlight = 1
     vim.g.everforest_diagnostic_virtual_text = "highlighted"
-    vim.opt.background = "light"
+    vim.opt.background = "dark"
     vim.cmd("colorscheme everforest")
   end
 }
@@ -154,6 +154,7 @@ local zenbones = {
   -- In Vim, compat mode is turned on as Lush only works in Neovim.
   dependencies = "rktjmp/lush.nvim",
   config = function()
+    vim.opt.background = "light"
     vim.cmd("colorscheme zenbones")
   end
 }
@@ -209,16 +210,45 @@ local cyberdream = {
   end
 }
 
+local vscode = {
+  "Mofiqul/vscode.nvim",
+  config = function()
+    vim.opt.background = "light"
+    vim.cmd("colorscheme vscode")
+  end
+}
+
+local zenburn = {
+  "phha/zenburn.nvim",
+  config = function()
+    vim.cmd("colorscheme zenburn")
+  end
+}
+
+local onedark = {
+  "navarasu/onedark.nvim",
+  config = function()
+    require("onedark").setup {
+      style = "warm"
+    }
+    require("onedark").load()
+    vim.cmd("colorscheme onedark")
+  end
+}
+
 
 return {
+  -- tokyonight,
   -- rosepine,
   -- nightfox,
-  everforest,
+  -- everforest,
   -- gruvbox_material,
   -- gruvbox,
   -- catppuccin,
   -- kanagawa,
   -- zenbones,
-  -- tokyonight,
   -- cyberdream,
+  -- vscode
+  zenburn,
+  -- onedark,
 }
