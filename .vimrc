@@ -45,7 +45,7 @@ set nohlsearch
 set clipboard=unnamedplus
 
 set termguicolors
-set background=light
+set background=dark
 let g:everforest_background="medium"
 let g:everforest_enable_italic="true"
 let g:everforest_transparent_background=0
