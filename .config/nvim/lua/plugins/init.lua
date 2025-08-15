@@ -287,4 +287,12 @@ return {
   { "tpope/vim-dadbod" },
   { "kristijanhusak/vim-dadbod-completion" },
   { "kristijanhusak/vim-dadbod-ui" },
+
+  -- colors
+  {
+    "catgoose/nvim-colorizer.lua",
+    event = "BufReadPre",
+    opts = { -- set to setup table
+    },
+  }
 }
