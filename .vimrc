@@ -10,6 +10,7 @@ Plug 'mhinz/vim-signify'
 
 Plug 'rose-pine/vim'
 Plug 'sainnhe/everforest'
+Plug 'jnurmine/Zenburn'
 
 call plug#end()
 
@@ -53,9 +54,10 @@ let g:everforest_ui_contrast="high"
 let g:everforest_diagnostic_text_highlight=1
 let g:everforest_diagnostic_line_highlight=1
 let g:everforest_diagnostic_virtual_text="highlighted"
-colorscheme everforest
 
-let g:lightline = { 'colorscheme': 'everforest' }
+let g:lightline = { 'colorscheme': 'zenburn' }
 
 let g:netrw_liststyle=3
 let g:netrw_banner=0
+
+colorscheme zenburn
