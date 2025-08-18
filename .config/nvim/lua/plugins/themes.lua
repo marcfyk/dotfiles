@@ -221,6 +221,8 @@ local vscode = {
 local zenburn = {
   "phha/zenburn.nvim",
   config = function()
+    local zenburn = require("zenburn")
+    zenburn.setup()
     vim.cmd("colorscheme zenburn")
   end
 }
@@ -228,10 +230,11 @@ local zenburn = {
 local onedark = {
   "navarasu/onedark.nvim",
   config = function()
-    require("onedark").setup {
-      style = "warm"
-    }
-    require("onedark").load()
+    local onedark = require("onedark")
+    onedark.setup({
+      style = "warmer"
+    })
+    onedark.load()
     vim.cmd("colorscheme onedark")
   end
 }
