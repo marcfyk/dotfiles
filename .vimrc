@@ -55,7 +55,7 @@ let g:everforest_diagnostic_text_highlight=1
 let g:everforest_diagnostic_line_highlight=1
 let g:everforest_diagnostic_virtual_text="highlighted"
 
-let g:lightline = { 'colorscheme': 'zenburn' }
+let g:lightline = { 'colorscheme': 'default' }
 
 let g:netrw_liststyle=3
 let g:netrw_banner=0
