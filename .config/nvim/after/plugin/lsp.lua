@@ -106,27 +106,27 @@
 -- vim.o.winborder = "rounded"
 
 -- Setup lspconfig for languages.
-local lsps = {
-  "gopls",
-  "hls",
-  "ocamllsp",
-  "lua_ls",
-  "rust_analyzer",
-  "basedpyright",
-  "ts_ls",
-  --"denols",
-  "marksman",
-  "clangd",
-  "taplo",
-  "thriftls",
-  "zls",
-  "cmake",
-  "jqls",
-  "jinja_lsp",
-  "gradle_ls",
-  "jdtls",
-  "jsonls",
-}
-for _, lsp in ipairs(lsps) do
-  vim.lsp.enable(lsp)
-end
+-- local lsps = {
+--   "gopls",
+--   "hls",
+--   "ocamllsp",
+--   "lua_ls",
+--   "rust_analyzer",
+--   "basedpyright",
+--   "ts_ls",
+--   --"denols",
+--   "marksman",
+--   "clangd",
+--   "taplo",
+--   "thriftls",
+--   "zls",
+--   "cmake",
+--   "jqls",
+--   "jinja_lsp",
+--   "gradle_ls",
+--   "jdtls",
+--   "jsonls",
+-- }
+-- for _, lsp in ipairs(lsps) do
+--   vim.lsp.enable(lsp)
+-- end
