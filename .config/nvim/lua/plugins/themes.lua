@@ -232,7 +232,7 @@ local onedark = {
   config = function()
     local onedark = require("onedark")
     onedark.setup({
-      style = "warmer"
+      style = "warm"
     })
     onedark.load()
     vim.cmd("colorscheme onedark")

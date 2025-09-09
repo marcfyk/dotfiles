@@ -541,7 +541,15 @@ return {
       local telescope = require "telescope"
       telescope.setup({
         defaults = {
-
+          layout_strategy = "vertical",
+          layout_config = {
+            horizontal = {
+              prompt_position = "top",
+            },
+            vertical = {
+              prompt_position = "top",
+            },
+          },
         },
       })
       telescope.load_extension "fzf"
