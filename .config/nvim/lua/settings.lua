@@ -21,7 +21,9 @@ vim.opt.scrolloff = 999
 vim.opt.incsearch = true
 vim.opt.hlsearch = false
 
-vim.opt.clipboard = "unnamedplus"
+vim.schedule(function()
+  vim.opt.clipboard = "unnamedplus"
+end)
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
@@ -30,3 +32,7 @@ vim.opt.list = true
 vim.opt.listchars:append "eol:↲"
 vim.opt.listchars:append "tab:> "
 vim.opt.listchars:append "trail:×"
+
+vim.opt.confirm = true
+
+vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
