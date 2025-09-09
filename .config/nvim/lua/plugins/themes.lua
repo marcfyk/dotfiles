@@ -252,6 +252,6 @@ return {
   -- zenbones,
   -- cyberdream,
   -- vscode
-  zenburn,
-  -- onedark,
+  -- zenburn,
+  onedark,
 }
